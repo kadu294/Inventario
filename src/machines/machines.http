@@ -1,0 +1,26 @@
+### list machines
+
+GET http://localhost:3000/machines
+
+### get machine
+GET http://localhost:3000/machines/2
+
+### create machine
+POST http://localhost:3000/machines
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com"
+}
+
+### update machine
+PATCH http://localhost:3000/machines/2
+Content-Type: application/json
+
+{
+  "name": "John De"
+}
+
+### delete machine
+DELETE http://localhost:3000/machines/2
